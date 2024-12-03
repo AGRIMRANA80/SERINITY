@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOOK NOW</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+      <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (dark)">
+        <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+      </button>
+      <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+            Light
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="dark" aria-pressed="true">
+            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+            Dark
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#circle-half"></use></svg>
+            Auto
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+  <symbol id="check" viewBox="0 0 16 16">
+    <title>Check</title>
+    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"></path>
+  </symbol>
+</svg>
+
+    <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+      <h1 class="display-4 fw-normal text-body-emphasis">Pricing</h1> <br>
+      <p class="fs-5 text-body-secondary">  Quickly Start BOOKING for our Premium suits!!
+        Limited time offer!!
+      </p>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Single Bed</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$100<small class="text-body-secondary fw-light">/Night</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>10% OFF on First Booking</li>
+              <li>50% OFF on Dinner/lunch</li>
+              <li>Play Room access</li>
+              <li>...</li>
+            </ul>
+            <button onclick="showModal('signupModal')"  class="w-100 btn btn-lg btn-primary" >Get</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+          <div class="card-header py-3 text-bg-primary border-primary">
+            <h4 class="my-0 fw-normal">Double Bed</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$150<small class="text-body-secondary fw-light">/mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+                <li>50% OFF on First Booking</li>
+                <li>50% OFF on Dinner/Lunch</li>
+                <li>Play Room access </li>
+                <li>Priority Call support</li>
+             
+            </ul>
+            <button onclick="showModal('signupModal')" class="w-100 btn btn-lg btn-primary">Get </button> 
+            
+          </div>   
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+          <div class="card-header py-3 text-bg-primary border-primary">
+            <h4 class="my-0 fw-normal">Double Bed/AC</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$200<small class="text-body-secondary fw-light">/mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+                <li>60% OFF on First Booking</li>
+                <li>FREE Dinner/Lunch</li>
+                <li>Play Room access </li>
+                <li>Priority Call support</li>
+                <li>Free Wifi</li>
+            </ul>
+            <button onclick="showModal('signupModal')" class="w-100 btn btn-lg btn-primary">Get</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <h2 class="display-6 text-center mb-4">Compare plans</h2>
+<div class="container">
+    <div class="table-responsive">
+      <table class="table text-center">
+        <thead>
+          <tr>
+            <th style="width: 34%;"></th>
+            <th style="width: 22%;">Single Bed</th>
+            <th style="width: 22%;">Double Bed</th>
+            <th style="width: 22%;">Double Bed with AC</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" class="text-start">Public</th>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-start">Private</th>
+            <td></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+          </tr>
+        </tbody>
+
+        <tbody>
+          <tr>
+            <th scope="row" class="text-start">Permissions</th>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-start">Sharing</th>
+            <td></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-start">Unlimited members</th>
+            <td></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-start">Extra security</th>
+            <td></td>
+            <td></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    </div>
+    
+  </main>
+  <footer class="pt-4 my-md-5 pt-md-5 border-top">
+    <div class="row">
+      <div class="col-12 col-md">
+        <small class="d-block mb-3 text-body-secondary">© 2017–2024</small>
+      </div>
+  </footer>
+</div>
+<script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+</script>
+</body>
+</html>
